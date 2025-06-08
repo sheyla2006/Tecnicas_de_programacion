@@ -1,0 +1,15 @@
+class Vehiculo:
+    def __init__(self, marca, modelo):
+        self.marca = marca
+        self.modelo = modelo
+
+    def conducir(self):
+        raise NotImplementedError("Este método debe ser implementado por subclases.")
+
+class Coche(Vehiculo):
+    def conducir(self):
+        return f"Conduciendo un {self.marca} {self.modelo}"
+
+# Uso
+mi_coche = Coche("Toyota", "Corolla")
+print(mi_coche.conducir())
