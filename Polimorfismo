@@ -1,0 +1,11 @@
+class Gato(Animal):
+    def hacer_sonido(self):
+        return "Miau!"
+
+def hacer_sonido_animal(animal):
+    print(animal.hacer_sonido())
+
+# Uso
+mi_gato = Gato()
+hacer_sonido_animal(mi_perro)  # Salida: Guau!
+hacer_sonido_animal(mi_gato)    # Salida: Miau!
